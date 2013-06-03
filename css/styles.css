@@ -52,11 +52,32 @@ table {
 
 @font-face {
 	font-family: museo-sans;
-	src: url('../fonts/MuseoSans_100.otf'),
-			url('../fonts/MuseoSans_300.otf'),
-			url('../fonts/MuseoSans_500.otf'),
-			url('../fonts/MuseoSans_700.otf'),
-			url('../fonts/MuseoSans_900.otf');
+	src: url('../fonts/MuseoSans_100.otf');
+	font-weight: 100;
+	}
+	
+@font-face {
+	font-family: museo-sans;
+	src: url('../fonts/MuseoSans_900.otf');
+	font-weight: 900;
+	}
+	
+@font-face {
+	font-family: museo-sans;
+	src: url('../fonts/MuseoSans_300.otf');
+	font-weight: 300;
+	}
+
+@font-face {
+	font-family: museo-sans;
+	src: url('../fonts/MuseoSans_500.otf');
+	font-weight: 500;
+	}
+
+@font-face {
+	font-family: museo-sans;
+	src: url('../fonts/MuseoSans_700.otf');
+	font-weight: 700;
 	}
 
 
@@ -67,6 +88,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font: 16px/1.5 "museo-sans", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: 100;
 	background-color:#fff;
 }
 
