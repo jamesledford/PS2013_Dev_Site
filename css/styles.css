@@ -194,7 +194,7 @@ footer{
 }
 
 .connect{
-	width: 33.3%;
+	width: 33.333%;
 	float: left;
 }
 
@@ -215,7 +215,7 @@ footer{
 }
 
 .location{
-	width: 66.6%;
+	width: 66.666%;
 	min-height: 180px;
 	background-color: #3a4449;
 	float: left;
@@ -310,32 +310,6 @@ h6.miles{
 	text-align: center;
 }
 
-@media screen and (max-width: 700px){
-	
-	.location, .geofun, .connect{
-		width: 100%;
-	}
-	
-	.connect p, address p{
-		text-align: center;
-		margin: 20px auto 30px;
-	}
-	
-	address{
-		margin: auto;
-		width: 100%;
-	}
-	
-	.geofun{
-		float: none;
-		width: 180px;
-		clear: both;
-		margin: 40px auto;
-		background-position: left center;
-	}
-
-}
-
 
 /* End Footer */
 
@@ -347,6 +321,7 @@ h6.miles{
 	max-width: 1478px;
 	margin: auto;
 	padding: 0;
+	overflow: hidden;
 }
 
 figure.bigimg{
@@ -374,6 +349,82 @@ figure.bigimg{
 	font-weight: 100;
 	font-size: 32px;
 }
+
+/* Navigation Buttons */
+
+button.next, button.prev{
+	background-color: rgba(77,88,95,.8);
+	border: none;
+	color: white;
+	font-size: 1.2em;
+	padding: 0;
+	height: 40px;
+	width: 250px;
+	cursor: pointer;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s; 
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+}
+
+.arrow{
+	background-color: rgba(77,88,95,1);
+	font-size: 1.3em;
+	height: 100%;
+	line-height: 1.5em;
+	width: 10px;
+	font-weight: 100;
+	display: block;
+}
+
+button.next .arrow, button.next p{
+	float: left;
+}
+
+button.next .arrow{
+	padding: 0 20px 0 10px;
+}
+
+button.prev .arrow, button.prev p{
+	float: right;
+}
+
+button.prev p{
+	text-align: right;
+}
+
+button.prev .arrow{
+	padding: 0 20px 0 10px;
+}
+
+button p{
+	display: block;
+	padding: 10px 15px;
+	line-height: 1em;
+	width: 170px;
+}
+
+button.next{
+	position: absolute;
+	top: 40%;
+	right: -210px;
+}
+
+button.next:hover{
+	right: -10px;
+}
+
+button.prev{
+	position: absolute;
+	top: 40%;
+	left: -210px;
+}
+
+button.prev:hover{
+	left: -25px;
+}
+
 
 
 .ecolabcs{
@@ -508,6 +559,32 @@ margin: 0;
 
 /* media queries begin here */
 
+@media screen and (max-width: 700px){
+	
+	.location, .geofun, .connect{
+		width: 100%;
+	}
+	
+	.connect p, address p{
+		text-align: center;
+		margin: 20px auto 30px;
+	}
+	
+	address{
+		margin: auto;
+		width: 100%;
+	}
+	
+	.geofun{
+		float: none;
+		width: 180px;
+		clear: both;
+		margin: 40px auto;
+		background-position: left center;
+	}
+
+}
+
 @media screen and (max-width: 768px) {
 
 ul.clients, ul.clients2{
@@ -556,7 +633,11 @@ figure.bigimg{
 .copyright img{
 	width: 100%;
 	padding: 4% 0;
-}	
+}
+
+button.next, button.prev{
+	top: 30%;
+}
 
 }
 
