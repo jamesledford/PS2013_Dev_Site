@@ -24,6 +24,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -80,8 +81,6 @@ table {
 	font-weight: 700;
 	}
 
-
-
 /* ####### Basic CSS ####### */
 
 body {
@@ -89,11 +88,108 @@ body {
 	padding: 0;
 	font: 16px/1.5 "museo-sans", Arial, Helvetica, Geneva, sans-serif;
 	font-weight: 100;
-	background-color:#fff;
+	background-color:#6b787e;
+	height: 100%;
+	overflow: auto;
 }
 
 .clear { clear:both; }
-.wrapper { max-width:980px; margin:auto; padding:1em; }
+.wrapper { max-width:1024px; margin:auto; padding:1em;}
+
+
+
+
+
+.testicle{
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	background-image: url(http://placekitten.com/1024/500);
+	background-size: cover;
+}
+
+button.next, button.prev{
+	background-color: rgba(77,88,95,.8);
+	border: none;
+	color: white;
+	font-size: 1.2em;
+	padding: 0;
+	height: 40px;
+	width: 250px;
+	cursor: pointer;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s; 
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+}
+
+.arrow{
+	background-color: rgba(77,88,95,1);
+	font-size: 1.3em;
+	height: 100%;
+	line-height: 1.5em;
+	width: 10px;
+	font-weight: 100;
+	display: block;
+}
+
+button.next .arrow, button.next p{
+	float: left;
+}
+
+button.next .arrow{
+	padding: 0 20px 0 10px;
+}
+
+button.prev .arrow, button.prev p{
+	float: right;
+}
+
+button.prev p{
+	text-align: right;
+}
+
+button.prev .arrow{
+	padding: 0 20px 0 10px;
+}
+
+button p{
+	display: block;
+	padding: 10px 15px;
+	line-height: 1em;
+	width: 170px;
+}
+
+button.next{
+	position: absolute;
+	top: 45%;
+	right: -210px;
+}
+
+button.next:hover{
+	right: -10px;
+}
+
+button.prev{
+	position: absolute;
+	top: 45%;
+	left: -210px;
+}
+
+button.prev:hover{
+	left: -25px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .happyclients{
 	width: 100%;
@@ -160,21 +256,22 @@ nav a {
 	padding: 1em;
 }
 
-nav a:hover { 
+	a:hover { 
 	background: #252525;
 	background: rgba(255,255,255,0.1); 
 }
 
 a, a:hover {
-	-o-transition: background-color 0.25s ease-in;
+	-ms-transition: background-color 0.25s ease-in;
 	-webkit-transition: background-color 0.25s ease-in;
 	-moz-transition: background-color 0.25s ease-in;
 	transition: background-color 0.25s ease-in;
 }
 
 section, header {
-display: block;
+	display: block;
 }
+
 
 /* ####### Footer ####### */
 
@@ -183,9 +280,8 @@ footer{
 	min-height: 180px;
 	background-color:#4d595f;
 	color:#d2d9db;
-	overflow: auto;
-	font-size: .9em;
-	clear: both;
+	overflow: visible;
+	font-size: .9em
 }
 
 .shoe{
@@ -194,7 +290,7 @@ footer{
 }
 
 .connect{
-	width: 33.3%;
+	width: 33%;
 	float: left;
 }
 
@@ -202,7 +298,7 @@ footer{
 	margin: 40px 0 0 50px;
 }
 
-.ftrtitle{
+span{
 	font-weight: 700;
 	line-height: 2.5em;
 	}
@@ -211,11 +307,10 @@ footer{
 	font:  "museo-sans", Arial, Helvetica, Geneva, sans-serif;
 	font-weight: 100;
 	color: #fff;
-	text-decoration: none;
 }
 
 .location{
-	width: 66.6%;
+	width: 66%;
 	min-height: 180px;
 	background-color: #3a4449;
 	float: left;
@@ -276,7 +371,6 @@ address{
 	background-color: #c9d0d2;
 	padding: 3px 6px;
 	cursor: pointer;
-	border: 1px solid #999;
 }
 
 .milesAway{
@@ -298,110 +392,16 @@ h6.miles{
 	background-color: #c9d0d2;
 	padding: 3px 6px;
 	cursor: pointer;
-	border: 1px solid #999;
 } 
-
-.copywrite {
-	font-size:12px;
-	color:#d2d9db;
-	margin: 20px auto;
-	clear: both;
-	max-width: 980px;
-	text-align: center;
-}
-
-@media screen and (max-width: 700px){
-	
-	.location, .geofun, .connect{
-		width: 100%;
-	}
-	
-	.connect p, address p{
-		text-align: center;
-		margin: 20px auto 30px;
-	}
-	
-	address{
-		margin: auto;
-		width: 100%;
-	}
-	
-	.geofun{
-		float: none;
-		width: 180px;
-		clear: both;
-		margin: 40px auto;
-		background-position: left center;
-	}
-
-}
-
-
 /* End Footer */
 
 
 
-/* Case study pages images and content */
-
-.hero{
-	max-width: 1478px;
-	margin: auto;
-	padding: 0;
-}
-
-figure.bigimg{
-	margin: 0;
-	padding-top: 0%;  /* slope */
-	height: 671px;  /* start height */
-	background: url(../images/ecolab_cs.jpg) #fff;
-	background-size: cover;
-    -moz-background-size: cover;  /* Firefox 3.6 */
-    background-position: center;  /* Internet Explorer 7/8 */
-}
-
-.hero_copy p{
-	font-size: 24px;
-	font-weight: 700;
-	width: 74%;
-	padding: 3% 0;
-	margin: auto;
-	color: #cb4830;
-	line-height: 34px;
-}
-
-.cs_title{
-	color: #4d595f;
-	font-weight: 100;
-	font-size: 32px;
-}
-
-
-.ecolabcs{
-	width: 74%;
-	margin: auto;
-}
-.copyfull{
-	width: 100%;
-}
-
-.copyleft{
-	width: 40%;
-	float: left;
-	padding-top: 2% ;
-	margin-bottom: 50px;
-}
-
-.copyright{
-	width: 60%;
-	float: right;
-	padding-top: 2% ;
-	
-}
-
-.copyright img{
-	max-width: 540px;
-	width: 100%;
-	padding-left: 8% ;
+.copywrite {
+	font-size:12px;
+	color:#d2d9db;
+	margin:20px;
+	clear: both;
 }
 
 /* ####### Mean Menu ####### */
@@ -505,9 +505,6 @@ padding: 0;
 margin: 0;
 }
 
-
-/* media queries begin here */
-
 @media screen and (max-width: 768px) {
 
 ul.clients, ul.clients2{
@@ -524,40 +521,6 @@ ul.clients li:nth-child(4),ul.clients2 li:nth-child(4) {
     padding: 0;   
 }
 
-.hero{
-	max-width: 768px;
-}
-
-figure.bigimg{
-	height: 500px;  /* start height */
-}
-
-.hero_copy p{
-	font-size: 20px;
-	width: 75%;
-	padding-top: 4%;
-	line-height: 24px;
-}
-
-.copyleft{
-	width: 100%;
-	float: left;
-	padding-top: 2% ;
-	margin-bottom: 50px;
-}
-
-.copyright{
-	width: 100%;
-	float: left;
-	clear: left;
+	
 	
 }
-
-.copyright img{
-	width: 100%;
-	padding: 4% 0;
-}	
-
-}
-
-
