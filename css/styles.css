@@ -100,13 +100,29 @@ a{
 .clear { clear:both; }
 .wrapper { max-width:980px; margin:auto; padding:1em; }
 
+.whoisplanet{
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 500;
+	color: #cb4830;
+	padding: 35px 0;
+}
+
+.ps_is{
+	color: #4d595f;
+	font-weight: 100;
+	font-size: 32px;
+}
+
 .happyclients{
 	width: 100%;
 	background: #d1d8db;
 }
 
 .clienthdr{
-	width: 200px;
+font-size: 24px;
+	width: 100%;
 	margin: auto;
 	color: #4c595f;
 	text-align: center;
@@ -350,7 +366,7 @@ h6.miles{
 
 .copywrite {
 	font-size:12px;
-	color:#d2d9db;
+	color:#4d595f;
 	margin: 20px auto;
 	clear: both;
 	max-width: 980px;
@@ -644,6 +660,14 @@ margin: 0;
 }
 
 @media screen and (max-width: 768px) {
+
+.whoisplanet{
+	font-size: 18px;
+}
+
+.ps_is{
+	font-size: 24px;
+}
 
 ul.clients, ul.clients2{
 	width: 100%;
