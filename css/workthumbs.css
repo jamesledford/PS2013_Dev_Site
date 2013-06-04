@@ -1,0 +1,14 @@
+.work-list{
+	max-width: 980px;
+	list-style: none;
+}
+
+.work-list li{
+width: 280px;
+padding: 0 0 30px 0;
+
+}
+
+.work-list p{
+	text-align: center;
+}
