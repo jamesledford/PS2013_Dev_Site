@@ -107,6 +107,7 @@ a{
 	font-weight: 500;
 	color: #cb4830;
 	padding: 35px 0;
+	margin: auto;
 }
 
 .ps_is{
@@ -635,6 +636,15 @@ margin: 0;
 
 @media screen and (max-width: 700px){
 	
+	.whoisplanet{
+		font-size: 18px;
+		width: 90%;
+	}
+	
+	.ps_is{
+		font-size: 24px;
+	}
+	
 	.location, .geofun, .connect{
 		width: 100%;
 	}
@@ -662,15 +672,15 @@ margin: 0;
 @media screen and (max-width: 768px) {
 
 .whoisplanet{
-	font-size: 18px;
+	width: 90%;
 }
-
-.ps_is{
-	font-size: 24px;
+.clienthdr{
+	padding: 10px 0;
 }
 
 ul.clients, ul.clients2{
 	width: 100%;
+	padding: 0 0 20px 0;
 	
 }
 
