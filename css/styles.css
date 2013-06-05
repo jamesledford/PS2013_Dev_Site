@@ -97,6 +97,13 @@ a{
 	text-decoration: none;
 }
 
+h2{
+	color: #cb4830;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 13px;
+}
+
 .clear { clear:both; }
 .wrapper { margin:auto; padding:1em; max-width:980px; }
 
@@ -631,7 +638,7 @@ button.prev:hover{
 }
 
 .copyright img{
-	padding: 2% 0 0 8% ;
+	padding: 7% 0 0 8% ;
 	max-width: 540px;
 	width: 100%;
 }
