@@ -21,9 +21,9 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
+	font: inherit;
+	font-size: 100%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -45,39 +45,39 @@ q:before, q:after {
 	content: none;
 }
 table {
-	border-collapse: collapse;
 	border-spacing: 0;
+	border-collapse: collapse;
 }
 /* @end */
 
 @font-face {
+	font-weight: 100;
 	font-family: museo-sans;
 	src: url('../fonts/MuseoSans_100.otf');
-	font-weight: 100;
 	}
 	
 @font-face {
+	font-weight: 900;
 	font-family: museo-sans;
 	src: url('../fonts/MuseoSans_900.otf');
-	font-weight: 900;
 	}
 	
 @font-face {
+	font-weight: 300;
 	font-family: museo-sans;
 	src: url('../fonts/MuseoSans_300.otf');
-	font-weight: 300;
 	}
 
 @font-face {
+	font-weight: 500;
 	font-family: museo-sans;
 	src: url('../fonts/MuseoSans_500.otf');
-	font-weight: 500;
 	}
 
 @font-face {
+	font-weight: 700;
 	font-family: museo-sans;
 	src: url('../fonts/MuseoSans_700.otf');
-	font-weight: 700;
 	}
 
 
@@ -87,18 +87,18 @@ table {
 body {
 	margin: 0;
 	padding: 0;
+	background-color:#fff;
 	font: 16px/1.5 "museo-sans", Arial, Helvetica, Geneva, sans-serif;
 	font-weight: 100;
-	background-color:#fff;
 }
 
 a{
-	text-decoration: none;
 	color: #333;
+	text-decoration: none;
 }
 
 .clear { clear:both; }
-.wrapper { max-width:980px; margin:auto; padding:1em; }
+.wrapper { margin:auto; padding:1em; max-width:980px; }
 
 .happyclients{
 	width: 100%;
@@ -106,23 +106,23 @@ a{
 }
 
 .clienthdr{
-	width: 200px;
 	margin: auto;
+	padding: 45px 0;
+	width: 200px;
 	color: #4c595f;
 	text-align: center;
-	padding: 45px 0;
 }
 
 ul.clients{
-	width: 742px;
 	margin: auto;
+	width: 742px;
 	text-align: center;
 	
 }
 ul.clients2{
-	width: 623px;
 	margin: auto;
 	padding: 25px 0 45px;
+	width: 623px;
 	text-align: center;
 }
 
@@ -136,8 +136,8 @@ ul.clients li:nth-child(4),ul.clients2 li:nth-child(4) {
 }
 
 header {
-	text-align: right;
 	background: #cb4830;
+	text-align: right;
 }
 
 header img { float:left; }
@@ -160,9 +160,9 @@ header nav ul li ul { display: none; }
 section { background-color:#fff; }
 
 nav a {
+	padding: 1em;
 	color: #fff;
 	text-decoration:none;
-	padding: 1em;
 }
 
 nav a:hover { 
@@ -171,14 +171,113 @@ nav a:hover {
 }
 
 a, a:hover {
-	-o-transition: background-color 0.25s ease-in;
 	-webkit-transition: background-color 0.25s ease-in;
 	-moz-transition: background-color 0.25s ease-in;
+	-o-transition: background-color 0.25s ease-in;
 	transition: background-color 0.25s ease-in;
 }
 
 section, header {
 display: block;
+}
+
+
+/* ###########  About Us ######### */
+
+.about{
+	margin: auto;
+	max-width: 980px;
+	width: 74%;
+}
+
+.about h1{
+	padding: 40px;
+	color: #999;
+	text-align: center;
+	font-size: 1.7em;
+}
+
+.leaders{
+	overflow: auto;
+	padding-bottom: 70px;
+	width: 100%;
+	background: #f2f6f7;
+}
+
+.leaders h1{
+	padding: 60px 0 30px;
+	color: #999;
+	text-align: center;
+	font-size: 1.7em;
+}
+
+.leader2{
+	overflow: auto;
+	margin: 40px auto;
+	max-width: 560px;
+	width: 50%;
+}
+
+.leader2 figure{
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+.leader2 figure img, .leader3 figure img, figcaption, .socials{
+	display: block;
+	margin: auto;
+	max-width: 280px;
+	width: 90%;
+}
+
+figcaption{
+	padding: 6px 0;
+	font-size: .7em;
+}
+
+.socials{
+	height: 20px;
+}
+
+.socials > *{
+	display: inline-block;
+	float: left;
+	margin-right: 12px;
+	width: 20px;
+	height: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.email{
+	background-image: url(../images/mail.png);
+}
+
+.linkedIn{
+	background-image: url(../images/linkedIn.png);
+}
+
+.twitter{
+	background-image: url(../images/twitter.png);
+}
+
+.skype{
+	background-image: url(../images/skype.png);
+}
+
+.leader3{
+	clear: both;
+	margin: 40px auto;
+	padding: 30px 0;
+	max-width: 840px;
+	width: 75%;
+}
+
+.leader3 figure{
+	display: block;
+	float: left;
+	width: 33.33%;
 }
 
 
@@ -190,34 +289,34 @@ display: block;
 }
 
 .pattern h1{
-	font-size: 1.7em;
 	padding-top: 40px;
-	text-align: center;
 	color: #999;
+	text-align: center;
+	font-size: 1.7em;
 }
 
 .work-list{
+	margin: 30px auto 70px;
 	max-width: 980px;
 	list-style: none;
-	margin: 30px auto 70px;
 }
 
 .work-list li{
 	float: left;
-	width: 33.333%;
 	padding: 0 0 30px 0;
+	width: 33.333%;
 }
 
 .work-list li img{
 	display: block;
-	width: 86%;
 	margin: auto;
+	width: 86%;
 }
 
 .work-list p{
 	text-align: center;
-	text-decoration: none;
 	color: #333;
+	text-decoration: none;
 	font-size: .8em;
 	padding-top: 5px;
 }
@@ -226,23 +325,23 @@ display: block;
 /* ####### Footer ####### */
 
 footer{
-	width: 100%;
+	clear: both;
+	overflow: auto;
 	min-height: 180px;
+	width: 100%;
 	background-color:#4d595f;
 	color:#d2d9db;
-	overflow: auto;
 	font-size: .9em;
-	clear: both;
 }
 
-.shoe{
+.shoe{ 
+	 margin:auto;
 	 max-width:1024px; 
-	 margin:auto; 
 }
 
 .connect{
-	width: 33.333%;
 	float: left;
+	width: 33.333%;
 }
 
 .connect p, address{
@@ -255,37 +354,37 @@ footer{
 	}
 
 .phone{
-	font:  "museo-sans", Arial, Helvetica, Geneva, sans-serif;
-	font-weight: 100;
 	color: #fff;
 	text-decoration: none;
+	font:  "museo-sans", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: 100;
 }
 
 .location{
-	width: 66.666%;
-	min-height: 180px;
-	background-color: #3a4449;
 	float: left;
+	min-height: 180px;
+	width: 66.666%;
+	background-color: #3a4449;
 }
 
 address{
-	width: 45%;
-	min-height: 100px;
 	display: block;
 	float: left;
+	min-height: 100px;
+	width: 45%;
 }
 
 .geofun{
+	position: relative;
+	display: block;
 	float: left;
+	margin-top: 20px;
 	width: 40%;
 	height: 136px;
-	margin-top: 20px;
-	display: block;
 	background-image: url(../images/georgia.png) ;
+	background-position: left top;
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: left top;
-	position: relative;
 }
 
 .geoOne{
@@ -297,33 +396,33 @@ address{
 
 .grayCircle{
 	position: absolute;
-	background-color: #283136;
-	opacity: .35;
+	top: -3px;
+	left: -5px;
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
-	left: -5px;
-	top: -3px;
+	background-color: #283136;
+	opacity: .35;
 }
 
 .orangeCircle{
 	position: absolute;
-	background-color: #cb4830;
+	top: 7px;
+	left: 5px;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	left: 5px;
-	top: 7px;
+	background-color: #cb4830;
 }
 
 .findOut{
 	float: left;
 	clear: both;
 	margin: 15px 0 0 90px;
-	background-color: #c9d0d2;
 	padding: 3px 6px;
-	cursor: pointer;
 	border: 1px solid #999;
+	background-color: #c9d0d2;
+	cursor: pointer;
 }
 
 .milesAway{
@@ -333,28 +432,28 @@ address{
 }
 
 h6.miles{
+	font-weight: 900;
 	font-size: 3em;
 	line-height: .9em;
-	font-weight: 900;
 }
 
 .comeVisit{
 	float: left;
 	clear: both;
 	margin: 15px 0 0 0;
-	background-color: #c9d0d2;
 	padding: 3px 6px;
-	cursor: pointer;
 	border: 1px solid #999;
+	background-color: #c9d0d2;
+	cursor: pointer;
 } 
 
 .copywrite {
-	font-size:12px;
-	color:#d2d9db;
-	margin: 20px auto;
 	clear: both;
+	margin: 20px auto;
 	max-width: 980px;
+	color:#d2d9db;
 	text-align: center;
+	font-size:12px;
 }
 
 
@@ -362,13 +461,13 @@ h6.miles{
 
 
 
-/* Case study pages images and content */
+/* ##### Case study pages images and content ###### */
 
 .hero{
-	max-width: 1478px;
+	overflow: hidden;
 	margin: auto;
 	padding: 0;
-	overflow: hidden;
+	max-width: 1478px;
 }
 
 figure.bigimg{
@@ -376,18 +475,18 @@ figure.bigimg{
 	padding-top: 0%;  /* slope */
 	height: 671px;  /* start height */
 	background: url(../images/ecolab_cs.jpg) #fff;
+    background-position: center;  /* Internet Explorer 7/8 */
 	background-size: cover;
     -moz-background-size: cover;  /* Firefox 3.6 */
-    background-position: center;  /* Internet Explorer 7/8 */
 }
 
 .hero_copy p{
-	font-size: 24px;
-	font-weight: 700;
-	width: 74%;
-	padding: 3% 0;
 	margin: auto;
+	padding: 3% 0;
+	width: 74%;
 	color: #cb4830;
+	font-weight: 700;
+	font-size: 24px;
 	line-height: 34px;
 }
 
@@ -400,29 +499,29 @@ figure.bigimg{
 /* Navigation Buttons */
 
 button.next, button.prev{
-	background-color: rgba(77,88,95,.8);
+	padding: 0;
+	width: 250px;
+	height: 40px;
 	border: none;
+	background-color: rgba(77,88,95,.8);
 	color: white;
 	font-size: 1.2em;
-	padding: 0;
-	height: 40px;
-	width: 250px;
 	cursor: pointer;
-	transition: all 1s;
+	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
-	-webkit-transition: all 1s; 
+	-ms-transition: all 1s; 
 	-o-transition: all 1s;
-	-ms-transition: all 1s;
+	transition: all 1s;
 }
 
 .arrow{
-	background-color: rgba(77,88,95,1);
-	font-size: 1.3em;
-	height: 100%;
-	line-height: 1.5em;
-	width: 10px;
-	font-weight: 100;
 	display: block;
+	width: 10px;
+	height: 100%;
+	background-color: rgba(77,88,95,1);
+	font-weight: 100;
+	font-size: 1.3em;
+	line-height: 1.5em;
 }
 
 button.next .arrow, button.next p{
@@ -448,8 +547,8 @@ button.prev .arrow{
 button p{
 	display: block;
 	padding: 10px 15px;
-	line-height: 1em;
 	width: 170px;
+	line-height: 1em;
 }
 
 button.next{
@@ -475,31 +574,31 @@ button.prev:hover{
 
 
 .ecolabcs{
-	width: 74%;
 	margin: auto;
+	width: 74%;
 }
 .copyfull{
 	width: 100%;
 }
 
 .copyleft{
-	width: 40%;
 	float: left;
-	padding-top: 2% ;
 	margin-bottom: 50px;
+	padding-top: 2% ;
+	width: 40%;
 }
 
 .copyright{
-	width: 60%;
 	float: right;
 	padding-top: 2% ;
+	width: 60%;
 	
 }
 
 .copyright img{
+	padding: 2% 0 0 8% ;
 	max-width: 540px;
 	width: 100%;
-	padding-left: 8% ;
 }
 
 /* ####### Mean Menu ####### */
@@ -508,43 +607,43 @@ a.meanmenu-reveal {
 display: none;
 }
 
-.mean-container .mean-bar { 
+.mean-container .mean-bar {
+position: relative;
+z-index: 999999; 
 float: left;
 width: 100%;
-position: relative;
 background: #cb4830;
-z-index: 999999;
 }
 .mean-container a.meanmenu-reveal {
-width: 22px;
-height: 22px;
-padding: 13px 13px 11px 13px;
 position: absolute;
 top: 0;
 right: 0;
-cursor: pointer;
+display: block;
+padding: 13px 13px 11px 13px;
+width: 22px;
+height: 22px;
 color: #fff;
 text-decoration: none;
-font-size: 16px;
 text-indent: -9999em;
+font-size: 16px;
 line-height: 22px;
-display: block;
+cursor: pointer;
 }
 .mean-container a.meanmenu-reveal span {
 display: block;
-background: #fff;
-height: 3px;
 margin-top: 3px;
+height: 3px;
+background: #fff;
 }
 .mean-container .mean-nav { 
-/*float: left;*/
-background: #cb4830;
+/* float: left; */
 padding:1em;
-/*width:100%;*/
+/* width:100%; */
+background: #cb4830;
 }
 .mean-container .mean-nav ul {
-padding: 10px 0 0 0;
 margin: 0;
+padding: 10px 0 0 0;
 width: 100%;
 list-style-type: none;
 }
@@ -552,20 +651,20 @@ list-style-type: none;
 position: relative;
 float: left;
 width: 95%;
-border-bottom:1px solid rgba(255,255,255,.2);
 border-top:1px solid rgba(0,0,0,.1);
+border-bottom:1px solid rgba(255,255,255,.2);
 }
 .mean-container .mean-nav ul li a {
 display: block;
-width: 90%;
 float: left;
-padding: 1em 5%;
 margin: 0;
-text-align: left;
+padding: 1em 5%;
+width: 90%;
 color: #fff;
+text-align: left;
+text-align:center;
 text-decoration: none;
 text-transform: uppercase;
-text-align:center;
 }
 
 .mean-nav ul li.first { border-top:none; }
@@ -576,15 +675,15 @@ background: #252525;
 background: rgba(255,255,255,0.1); 
 }
 .mean-container .mean-nav ul li a.mean-expand {
+position: absolute;
+top: 0;
+right: 0;
+z-index: 2;
+padding: 12px !important;
 width: 26px;
 height: 26px;
 border: none !important;
-padding: 12px !important;
 text-align: center;
-position: absolute;
-right: 0;
-top: 0;
-z-index: 2;
 font-weight: 700;
 }
 .mean-container .mean-nav ul li a.mean-expand:hover {
@@ -592,15 +691,15 @@ background: none;
 }
 .mean-container .mean-push { 
 float: left;
-width: 100%;
-padding: 0;
+clear: both;
 margin: 0;
-clear: both; 
+padding: 0;
+width: 100%; 
 }
 .mean-nav .wrapper {
-width: 100%;
-padding: 0;
 margin: 0;
+padding: 0;
+width: 100%;
 }
 
 
@@ -624,8 +723,8 @@ margin: 0;
 	}
 	
 	.connect p, address p{
-		text-align: center;
 		margin: 20px auto 30px;
+		text-align: center;
 	}
 	
 	address{
@@ -635,9 +734,9 @@ margin: 0;
 	
 	.geofun{
 		float: none;
-		width: 180px;
 		clear: both;
 		margin: 40px auto;
+		width: 180px;
 		background-position: left center;
 	}
 
@@ -668,35 +767,57 @@ figure.bigimg{
 }
 
 .hero_copy p{
-	font-size: 20px;
-	width: 75%;
 	padding-top: 4%;
+	width: 75%;
+	font-size: 20px;
 	line-height: 24px;
 }
 
 .copyleft{
-	width: 100%;
 	float: left;
-	padding-top: 2% ;
 	margin-bottom: 50px;
+	padding-top: 2% ;
+	width: 100%;
 }
 
 .copyright{
-	width: 100%;
 	float: left;
 	clear: left;
+	width: 100%;
 	
 }
 
 .copyright img{
-	width: 100%;
 	padding: 4% 0;
+	width: 100%;
 }
 
 button.next, button.prev{
 	top: 30%;
 }
 
+.leader2, .leader3{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
 }
+
+.leader2 figure, .leader3 figure{
+	width: 80%;
+	float: none;
+	margin: 5% 10%;
+}
+
+.leader3{
+	margin-top: -5%;
+}
+
+}
+
+
+
+
+
 
 
