@@ -80,6 +80,19 @@ table {
 	src: url('../fonts/MuseoSans_700.otf');
 	}
 
+@font-face {
+	font-weight: 500;
+	font-family: museo-slab;
+	src: url('../fonts/Museo_Slab_500.otf');
+	}
+
+@font-face {
+	font-weight: 700;
+	font-style: italic;
+	font-family: museo-slab;
+	src: url('../fonts/Museo_Slab_300italic.otf');
+	}
+
 
 
 /* ####### Basic CSS ####### */
@@ -509,10 +522,13 @@ figure.bigimg{
 	margin: 0;
 	padding-top: 0%;  /* slope */
 	height: 671px;  /* start height */
-	background: url(../images/ecolab_cs.jpg) #fff;
     background-position: center;  /* Internet Explorer 7/8 */
 	background-size: cover;
     -moz-background-size: cover;  /* Firefox 3.6 */
+}
+
+.ecolab{
+	background: url(../images/ecolab_cs.jpg) #fff;
 }
 
 .hero_copy p{
@@ -611,6 +627,7 @@ button.prev:hover{
 .ecolabcs{
 	margin: auto;
 	width: 74%;
+	max-width: 980px;
 }
 .copyfull{
 	width: 100%;
@@ -623,17 +640,33 @@ button.prev:hover{
 	width: 40%;
 }
 
+.copyleft img, .copyleftWide img{
+	width: 100%;
+} 
+
+.copyleftWide{
+	width: 60%;
+	float: left;
+	margin-bottom: 50px;
+	padding-top: 2%;
+}
+
 .copyright{
 	float: right;
 	padding-top: 2% ;
-	width: 60%;
-	
+	width: 60%;	
 }
 
 .copyright img{
-	padding: 7% 0 0 8% ;
+	padding: 0 0 15% 8% ;
 	max-width: 540px;
 	width: 100%;
+}
+
+.copyrightNarrow{
+	float: right;
+	padding-top: 2% ;
+	width: 30%;	
 }
 
 /* ####### Mean Menu ####### */
@@ -838,23 +871,30 @@ figure.bigimg{
 	line-height: 24px;
 }
 
-.copyleft{
+.copyleft, .copyleftWide{
 	float: left;
-	margin-bottom: 50px;
 	padding-top: 2% ;
 	width: 100%;
 }
 
-.copyright{
+.copyright, .copyrightNarrow{
 	float: left;
 	clear: left;
 	width: 100%;
-	
+	padding-top: 0;
 }
 
-.copyright img{
-	padding: 4% 0;
+.copyright img, .copyleft img, .copyrightNarrow img, .copyleftWide img{
+	padding: 0;
 	width: 100%;
+}
+
+.pullUp50{
+	margin-top: -50px;
+}
+
+.pushBottom{
+	padding-bottom: 50px;
 }
 
 button.next, button.prev{
