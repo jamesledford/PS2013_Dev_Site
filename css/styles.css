@@ -518,7 +518,7 @@ h6.miles{
 	max-width: 1478px;
 }
 
-figure.bigimg{
+figure.bigimg {
 	margin: 0;
 	padding-top: 0%;  /* slope */
 	height: 671px;  /* start height */
@@ -527,9 +527,14 @@ figure.bigimg{
     -moz-background-size: cover;  /* Firefox 3.6 */
 }
 
+<<<<<<< HEAD
 .ecolab{
 	background: url(../images/ecolab_cs.jpg) #fff;
 }
+=======
+.ecolab { background: url(../images/ecolab_cs.jpg) #fff; }
+.coke { background: url(../images/coke_cs.jpg) #fff; }
+>>>>>>> c3a3ee76783693b9d32d2e60fe51aa8b7c8d192b
 
 .hero_copy p{
 	margin: auto;
@@ -624,11 +629,12 @@ button.prev:hover{
 
 
 
-.ecolabcs{
+.ecolabcs, .cokecs {
 	margin: auto;
 	width: 74%;
 	max-width: 980px;
 }
+
 .copyfull{
 	width: 100%;
 }
