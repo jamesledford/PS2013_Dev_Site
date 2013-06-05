@@ -78,7 +78,19 @@ table {
 	font-weight: 700;
 	font-family: museo-sans;
 	src: url('../fonts/MuseoSans_700.otf');
-	}
+}
+
+@font-face {
+	font-weight: 500;
+	font-family: museo-slab;
+	src: url('../fonts/Museo_Slab_500.otf');
+}
+
+@font-face {
+	font-weight: 300;
+	font-family: museo-slab;
+	src: url('../fonts/Museo_Slab_300italic.otf');
+}
 
 
 
@@ -516,6 +528,7 @@ figure.bigimg {
 
 .ecolab { background: url(../images/ecolab_cs.jpg) #fff; }
 .coke { background: url(../images/coke_cs.jpg) #fff; }
+.coke .hero_copy p, .coke .cs_title { color:#fff; }
 
 .hero_copy p{
 	margin: auto;
@@ -637,6 +650,35 @@ button.prev:hover{
 	padding: 7% 0 0 8% ;
 	max-width: 540px;
 	width: 100%;
+}
+
+.copyhalf {
+	float:left;
+	padding:5% 0;
+	width:50%;
+}
+
+.copyhalf img {
+	max-width:100%;
+}
+
+.blockquote {
+	padding:10% 0 10% 10%;
+	font-weight: 500;
+	font-family: museo-slab;
+	font-size:30px;
+	color:#cb4830;
+	border-top:solid 5px #d2d9db;
+	border-bottom:solid 5px #d2d9db;
+	width:80%;
+}
+
+.blockquote span {
+	font-weight: 300;
+	font-family: museo-slab;
+	font-size:16px;
+	color:#4d595f;
+	float:right;
 }
 
 /* ####### Mean Menu ####### */
