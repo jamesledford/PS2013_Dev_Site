@@ -514,8 +514,8 @@ figure.bigimg {
     -moz-background-size: cover;  /* Firefox 3.6 */
 }
 
-figure.bigimg .ecolab { background: url(../images/ecolab_cs.jpg) #fff; }
-figure.bigimg .coke { background: url(../images/coke_cs.jpg) #fff; }
+.ecolab { background: url(../images/ecolab_cs.jpg) #fff; }
+.coke { background: url(../images/coke_cs.jpg) #fff; }
 
 .hero_copy p{
 	margin: auto;
