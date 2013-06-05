@@ -878,6 +878,14 @@ button.next, button.prev{
 	margin-top: -5%;
 }
 
+button.next:hover{
+	right: -210px;
+}
+
+button.prev:hover{
+	left: -210px;
+}
+
 }
 
 
