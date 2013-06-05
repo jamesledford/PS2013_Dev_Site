@@ -539,18 +539,12 @@ figure.bigimg {
     -moz-background-size: cover;  /* Firefox 3.6 */
 }
 
-<<<<<<< HEAD
 .ecolab{
 	background: url(../images/ecolab_cs.jpg) #fff;
 }
-=======
-.ecolab { background: url(../images/ecolab_cs.jpg) #fff; }
 .coke { background: url(../images/coke_cs.jpg) #fff; }
-<<<<<<< HEAD
->>>>>>> c3a3ee76783693b9d32d2e60fe51aa8b7c8d192b
-=======
+
 .coke .hero_copy p, .coke .cs_title { color:#fff; }
->>>>>>> 5b16c6c0a3c268946919d647aa0bc39cb8366c97
 
 .hero_copy p{
 	margin: auto;
