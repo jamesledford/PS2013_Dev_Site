@@ -110,23 +110,23 @@ a{
 }
 
 h2{
-	color: #cb4830;
-	font-size: 20px;
-	font-weight: 700;
 	margin-bottom: 13px;
+	color: #cb4830;
+	font-weight: 700;
+	font-size: 20px;
 }
 
 .clear { clear:both; }
 .wrapper { margin:auto; padding:1em; max-width:980px; }
 
 .whoisplanet{
-	width: 100%;
-	text-align: center;
-	font-size: 24px;
-	font-weight: 500;
-	color: #cb4830;
-	padding: 35px 0;
 	margin: auto;
+	padding: 35px 0;
+	width: 100%;
+	color: #cb4830;
+	text-align: center;
+	font-weight: 500;
+	font-size: 24px;
 }
 
 .ps_is{
@@ -141,26 +141,26 @@ h2{
 }
 
 .clienthdr{
-	font-size: 24px;
-	width: 100%;
 	margin: auto;
 	padding: 45px 0;
+	width: 100%;
 	width: 200px;
 	color: #4c595f;
 	text-align: center;
+	font-size: 24px;
 }
 
 ul.clients{
-	width: 778px;
 	margin: auto;
+	width: 778px;
 	width: 742px;
 	text-align: center;
 	
 }
 ul.clients2{
-	width: 590px;
 	margin: auto;
 	padding: 25px 0 45px;
+	width: 590px;
 	width: 623px;
 	text-align: center;
 }
@@ -354,11 +354,11 @@ figcaption{
 }
 
 .work-list p{
-	text-align: center;
+	padding-top: 5px;
 	color: #333;
+	text-align: center;
 	text-decoration: none;
 	font-size: .8em;
-	padding-top: 5px;
 }
 
 
@@ -488,20 +488,20 @@ h6.miles{
 } 
 
 .bottom {
-	background-color:#6b787e;
 	padding: 20px 0;
+	background-color:#6b787e;
 }
 
 .copywrite {
-	font-size:12px;
-	color:#4d595f;
-	margin:0 auto;
 	clear: both;
+	margin:0 auto;
 	max-width: 980px;
+	color:#4d595f;
 	color:#d2d9db;
 	text-align: center;
-	font-size:12px;
 	text-align:left;
+	font-size:12px;
+	font-size:12px;
 }
 
 
@@ -626,9 +626,9 @@ button.prev:hover{
 
 .ecolabcs, .cokecs {
 	margin: auto;
-	width: 74%;
-	max-width: 980px;
 	padding-bottom: 50px;
+	max-width: 980px;
+	width: 74%;
 }
 
 .copyfull{
@@ -647,10 +647,10 @@ button.prev:hover{
 } 
 
 .copyleftWide{
-	width: 60%;
 	float: left;
 	margin-bottom: 50px;
 	padding-top: 2%;
+	width: 60%;
 }
 
 .copyright{
@@ -678,26 +678,30 @@ button.prev:hover{
 }
 
 .copyhalf img {
-	max-width:100%;
+	width:90%;
 }
 
 .blockquote {
 	padding:10% 0 10% 10%;
-	font-weight: 500;
-	font-family: museo-slab;
-	font-size:30px;
-	color:#cb4830;
+	width:80%;
 	border-top:solid 5px #d2d9db;
 	border-bottom:solid 5px #d2d9db;
-	width:80%;
+	color:#cb4830;
+	font-weight: 500;
+	font-size:30px;
+	font-family: museo-slab;
 }
 
 .blockquote span {
-	font-weight: 300;
-	font-family: museo-slab;
-	font-size:16px;
-	color:#4d595f;
 	float:right;
+	color:#4d595f;
+	font-weight: 300;
+	font-size:16px;
+	font-family: museo-slab;
+}
+
+.pushRight{
+	margin: -50px 0 50px 50px;
 }
 
 /* ####### Mean Menu ####### */
@@ -820,14 +824,22 @@ width: 100%;
 		width: 30%;
 	}
 	
+	.copyhalf img{
+		margin-top: 50px;
+	}
+	
+	.blockquote{
+		font-size: 24px;
+	}
+	
 }
 
 
 @media screen and (max-width: 700px){
 	
 	.whoisplanet{
-		font-size: 18px;
 		width: 90%;
+		font-size: 18px;
 	}
 	
 	.ps_is{
@@ -870,8 +882,8 @@ width: 100%;
 
 
 ul.clients, ul.clients2{
-	width: 100%;
 	padding: 0 0 20px 0;
+	width: 100%;
 	
 }
 
@@ -911,11 +923,11 @@ figure.bigimg{
 .copyright, .copyrightNarrow{
 	float: left;
 	clear: left;
-	width: 100%;
 	padding-top: 0;
+	width: 100%;
 }
 
-.copyright img, .copyleft img, .copyrightNarrow img, .copyleftWide img{
+.copyright img, .copyleft img, .copyrightNarrow img, .copyleftWide img, .copyhalf img{
 	padding: 0;
 	width: 100%;
 }
@@ -928,21 +940,25 @@ figure.bigimg{
 	padding-bottom: 50px;
 }
 
+.pushRight{
+	margin: 10px 0 50px 0;
+}
+
 button.next, button.prev{
 	top: 30%;
 }
 
 .leader2, .leader3{
-	width: 100%;
 	margin: 0;
 	padding: 0;
 	max-width: 100%;
+	width: 100%;
 }
 
 .leader2 figure, .leader3 figure{
-	width: 80%;
 	float: none;
 	margin: 5% 10%;
+	width: 80%;
 }
 
 .leader3{
