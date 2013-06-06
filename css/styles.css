@@ -275,6 +275,7 @@ figcaption{
 	font-size: .7em;
 }
 
+
 .socials{
 	height: 20px;
 }
@@ -626,6 +627,8 @@ button.prev:hover{
 .ecolabcs, .cokecs {
 	margin: auto;
 	width: 74%;
+	max-width: 980px;
+	padding-bottom: 50px;
 }
 
 .copyfull{
@@ -639,17 +642,33 @@ button.prev:hover{
 	width: 40%;
 }
 
+.copyleft img, .copyleftWide img{
+	width: 100%;
+} 
+
+.copyleftWide{
+	width: 60%;
+	float: left;
+	margin-bottom: 50px;
+	padding-top: 2%;
+}
+
 .copyright{
 	float: right;
 	padding-top: 2% ;
-	width: 60%;
-	
+	width: 60%;	
 }
 
 .copyright img{
-	padding: 7% 0 0 8% ;
+	padding: 0 0 15% 8% ;
 	max-width: 540px;
 	width: 100%;
+}
+
+.copyrightNarrow{
+	float: right;
+	padding-top: 2% ;
+	width: 30%;	
 }
 
 .copyhalf {
@@ -883,23 +902,30 @@ figure.bigimg{
 	line-height: 24px;
 }
 
-.copyleft{
+.copyleft, .copyleftWide, .copyhalf{
 	float: left;
-	margin-bottom: 50px;
 	padding-top: 2% ;
 	width: 100%;
 }
 
-.copyright{
+.copyright, .copyrightNarrow{
 	float: left;
 	clear: left;
 	width: 100%;
-	
+	padding-top: 0;
 }
 
-.copyright img{
-	padding: 4% 0;
+.copyright img, .copyleft img, .copyrightNarrow img, .copyleftWide img{
+	padding: 0;
 	width: 100%;
+}
+
+.pullUp50{
+	margin-top: -50px;
+}
+
+.pushBottom{
+	padding-bottom: 50px;
 }
 
 button.next, button.prev{
