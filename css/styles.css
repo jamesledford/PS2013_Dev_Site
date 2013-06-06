@@ -529,7 +529,11 @@ figure.bigimg {
 
 .ecolab { background: url(../images/ecolab_cs.jpg) #fff; }
 .coke { background: url(../images/coke_cs.jpg) #fff; }
-.coke .hero_copy p, .coke .cs_title { color:#fff; }
+.coke .hero_copy p, .coke .cs_title, .leonisa .hero_copy p, .depot .cs_title { color:#fff; }
+.leonisa { background: url(../images/leonisa_cs.jpg) #fff;}
+.leonisa .hero_copy p{ font-weight: 100;}
+.depot{ background: url(../images/homeDepot_cs.jpg) #fff; }
+.depot .hero_copy p{color: #000; font-weight: 100;}
 
 .hero_copy p{
 	margin: auto;
@@ -624,25 +628,27 @@ button.prev:hover{
 
 
 
-.ecolabcs, .cokecs {
+.ecolabcs, .cokecs, .leonisacs, .depotcs {
 	margin: auto;
 	padding-bottom: 50px;
 	max-width: 980px;
 	width: 74%;
 }
 
-.copyfull{
+.copyfull, .copyfull img{
 	width: 100%;
 }
+
 
 .copyleft{
 	float: left;
 	margin-bottom: 50px;
 	padding-top: 2% ;
-	width: 40%;
+	padding-right: 2%;
+	width: 38%;
 }
 
-.copyleft img, .copyleftWide img{
+.copyleft img, .copyleftWide img,.copyfull img{
 	width: 100%;
 } 
 
