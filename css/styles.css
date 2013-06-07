@@ -117,7 +117,7 @@ h2{
 }
 
 .clear { clear:both; }
-.wrapper { margin:auto; padding:1em; max-width:980px; }
+.wrapper { margin:auto; padding:1em; width: 100%; }
 
 .whoisplanet{
 	margin: auto;
