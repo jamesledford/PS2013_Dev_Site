@@ -53,7 +53,7 @@ $(document).ready(function() {
 				// Lock the carousel
 				$("#carousel").addClass("lock");
 				// Move the carousel
-				$("#slides").animate({left: -slideWidth}, "slow", function() {
+				$("#slides").animate({left: -(slideWidth+margin)}, "slow", function() {
 					$("#carousel").removeClass("lock");
 					slides.push(slides.shift());
 					updateSlides();
@@ -62,14 +62,23 @@ $(document).ready(function() {
 			} else if (direction === "prev") {
 				// Lock the carousel
 				$("#carousel").addClass("lock");
-				// Move the carousel
-				slides.unshift(slides.pop());
+				// Move the carousel			
 				$("#slides").animate({left: slideWidth}, "slow", function() {
 					$("#carousel").removeClass("lock");
+					slides.unshift(slides.pop());
 					updateSlides();
 					resetCarousel();
 				});
 			}
+		}
+	}
+
+	function initCarousel() {
+		if (slides[0].offsetHeight < 50) {
+			$("#carousel").fadeTo(0, 0);
+			setTimeout(initCarousel, 250);
+		} else {
+			$("#carousel").css("height", slides[0].offsetHeight).fadeTo("slow", 1);
 		}
 	}
 
@@ -96,4 +105,5 @@ $(document).ready(function() {
 	//Init
 	slides = initSlides();
 	updateSlides();
+	initCarousel();
 });
