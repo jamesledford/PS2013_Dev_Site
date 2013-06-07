@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<title>Planet Studio</title>
 	<link rel="stylesheet" href="css/styles.css" media="all" />
+    <link rel="stylesheet" href="css/carousel.css" media="all" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -14,6 +15,7 @@
     <script src="http://code.jquery.com/jquery-1.7.1.js"></script> 
 	<script src="js/jquery.meanmenu.js"></script> 
 	<script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
     <script>
     jQuery(document).ready(function () {
         jQuery('header nav').meanmenu();
@@ -40,7 +42,17 @@
     </header>
     
 	<section class="wrapper">
-        	main section
+        	<div id="carousel">
+    <div id="prev"><a href="#">&lt;</a></div>
+    <div id="next"><a href="#">&gt;</a></div>
+    <div id="slides">
+        <div class="slide"><a href="#slide1"><img src="slides/slide1.png" /></a></div>
+        <div class="slide"><a href="#slide2"><img src="slides/slide2.png" /></a></div>
+        <div class="slide"><a href="#slide3"><img src="slides/slide3.png" /></a></div>
+        <div class="slide"><a href="#slide4"><img src="slides/slide4.png" /></a></div>
+        <div class="slide"><a href="#slide5"><img src="slides/slide5.png" /></a></div>
+    </div>
+</div>
     </section>
     
     <section class="whoisplanet">
