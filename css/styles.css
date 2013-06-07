@@ -611,7 +611,7 @@ button p{
 }
 
 button.next{
-	position: absolute;
+	position: fixed;
 	top: 40%;
 	right: -210px;
 }
