@@ -117,12 +117,12 @@ h2{
 }
 
 .clear { clear:both; }
-.wrapper { margin:auto; padding:1em 0; width: 100%; }
+.wrapper { margin:auto; padding: 0; width: 100%; }
 .navwrapper { margin:auto; padding:1em 0;
 width: 100%; }
 
 .logo{
-	margin: 0 0 0 1.5em;
+	margin: 1.5em;
 }
 .whoisplanet{
 	margin: auto;
@@ -725,6 +725,7 @@ button.prev:hover{
 	margin: -50px 0 50px 50px;
 }
 
+
 /* ####### Mean Menu ####### */
 
 a.meanmenu-reveal {
@@ -858,6 +859,19 @@ width: 100%;
 	font-size: 14px;
 	margin: auto;
 }	
+
+.blockquote {
+	margin-top: 20px;
+	padding:5% 0 13% 10%;
+	width:80%;
+	border-top:solid 5px #d2d9db;
+	border-bottom:solid 5px #d2d9db;
+	color:#cb4830;
+	font-weight: 500;
+	font-size:20px;
+	font-family: museo-slab;
+}
+
 }
 
 
