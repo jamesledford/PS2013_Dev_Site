@@ -19,9 +19,9 @@ $(document).ready(function() {
 		windowWidth = document.body.offsetWidth;
 
 		if (windowWidth < 560) {
-			$(".slide").css("width", "60%");
+			$(".slide").css("width", "90%");
 		} else if (windowWidth < 1025) {
-			$(".slide").css("width", "85%");
+			$(".slide").css("width", "95%");
 		} else {
 			$(".slide").css("width", "100%");
 		}
