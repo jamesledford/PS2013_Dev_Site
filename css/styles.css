@@ -546,9 +546,8 @@ figure.bigimg {
 .coke { background: url(../images/coke_cs.jpg) #fff; }
 .coke .hero_copy p, .coke .cs_title, .leonisa .hero_copy p, .depot .cs_title { color:#fff; }
 .leonisa { background: url(../images/leonisa_cs.jpg) #fff;}
-.leonisa .hero_copy p{ font-weight: 100;}
 .depot{ background: url(../images/homeDepot_cs.jpg) #fff; }
-.depot .hero_copy p{color: #000; font-weight: 100;}
+.depot .hero_copy p{color: #fff;}
 
 .hero_copy p{
 	margin: auto;
@@ -727,6 +726,14 @@ button.prev:hover{
 	font-weight: 300;
 	font-size:16px;
 	font-family: museo-slab;
+}
+
+.blockquote .small{
+float:right;
+color: #000;
+text-align: right;
+margin-top: -18px;
+font: 300 12px/14px museo-slab;
 }
 
 .pushRight{
