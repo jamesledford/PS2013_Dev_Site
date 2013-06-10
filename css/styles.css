@@ -552,7 +552,8 @@ figure.bigimg {
 .hero_copy p{
 	margin: auto;
 	padding: 3% 0;
-	width: 74%;
+/*	width: 74%;*/
+	max-width: 980px;
 	color: #cb4830;
 	font-weight: 700;
 	font-size: 24px;
@@ -688,7 +689,7 @@ button.prev:hover{
 }
 
 .copyright img{
-	padding: 0 0 15% 8% ;
+	padding: 0 0 5% 8% ;
 	max-width: 540px;
 	width: 100%;
 }
@@ -707,6 +708,10 @@ button.prev:hover{
 
 .copyhalf img {
 	width:90%;
+}
+
+.leon-fix{
+	width: 88%;
 }
 
 .blockquote {
