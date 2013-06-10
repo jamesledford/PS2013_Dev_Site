@@ -118,13 +118,18 @@ h2{
 
 .clear { clear:both; }
 .wrapper { margin:auto; padding: 0; width: 100%; }
-.navwrapper { margin:auto; padding:0; height: 40px;
-width: 100%; }
+.navwrapper { 
+margin:auto;
+padding:10px 0;
+height: 20px;
+width: 100%;
+ }
 
 .logo{
 	width: 200px;
 	margin: 0;
-	padding: 12px 0 0 20px;
+	padding: 2px 0 0 20px;
+	float: left;
 }
 
 .whoisplanet{
@@ -184,7 +189,7 @@ header {
 	text-align: right;
 }
 
-header img { float:left; }
+/*header img { float:left; }*/
 
 header nav ul {
 	float:right;
@@ -744,7 +749,7 @@ background: #cb4830;
 }
 .mean-container a.meanmenu-reveal {
 position: absolute;
-margin-right: 20px;
+margin: 7px 0 0 0;
 top: 0;
 right: 0;
 display: block;
@@ -833,6 +838,7 @@ width: 100%;
 
 .mean-container a.nohover{
 	background: transparent;
+	padding-left: 0;
 }
 
 
@@ -922,7 +928,7 @@ width: 100%;
 
 .logo{
 padding: 0;
-margin: 0;
+margin: 6px 0;
 }
 
 .whoisplanet{
