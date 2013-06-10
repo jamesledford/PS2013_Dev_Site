@@ -403,6 +403,12 @@ footer{
 	margin: 40px 0 0 50px;
 }
 
+.email {
+	color: #fff;
+	background: transparent;
+	
+}
+
 .ftrtitle{
 	font-weight: 700;
 	line-height: 2.5em;
@@ -509,7 +515,7 @@ h6.miles{
 
 .copywrite {
 	clear: both;
-	margin:0 auto;
+	margin:0 20px;
 	max-width: 980px;
 	color:#4d595f;
 	color:#d2d9db;
