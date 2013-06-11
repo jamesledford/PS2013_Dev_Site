@@ -97,6 +97,17 @@ $(document).ready(function() {
 		animateSlides("next");
 	});
 
+
+	$(".slide").swipeleft(function(e) {
+		e.preventDefault();
+		animateSlides("prev");
+	});
+
+	$(".slide").swiperight(function(e) {
+		e.preventDefault();
+		animateSlides("next");
+	});
+
 	// Window Resize Events
 	$(window).resize(function() {
 		updateSlides();

@@ -151,6 +151,7 @@ width: 100%;
 .happyclients{
 	width: 100%;
 	background: #d1d8db;
+	overflow: auto;
 }
 
 .clienthdr{
@@ -163,25 +164,33 @@ width: 100%;
 }
 
 ul.clients{
-	margin: auto;
-	width: 778px;
-	text-align: center;
-	
+	width: 90%;
+	max-width: 980px;
+	display: block;
+	margin: 0 auto 50px;
 }
+
 ul.clients2{
-	margin: auto;
-	padding: 25px 0 45px;
-	width: 590px;
-	text-align: center;
+	width: 60%;
+	max-width: 788px;
+	display: block;
+	margin: 0 auto 50px;
 }
 
 ul.clients li, ul.clients2 li{
-	display: inline;
-	padding: 0 50px 0 0;
+	width: 24%;
+	display: inline-block;
 }
 
-ul.clients li:nth-child(4),ul.clients2 li:nth-child(4) {
-    padding: 0;   
+ul.clients li img{
+	max-width: 80%;
+	display: block;
+	margin: auto;
+}
+
+ul.clients2 li img{
+	max-width: 70%;
+	display: block; margin: auto;
 }
 
 header {
@@ -883,13 +892,7 @@ width: 100%;
 		width: 70%;
 	}
 	
-	ul.clients li img{
-		width: 40%;
-	}
-	ul.clients2 li img{
-		width: 30%;
-	}
-	
+		
 	.copyhalf img{
 		margin-top: 50px;
 	}
@@ -981,25 +984,6 @@ margin: 6px 0;
 	font-size: 20px;	
 }
 
-
-ul.clients, ul.clients2{
-	padding: 0 0 20px 0;
-	width: 100%;
-	
-}
-
-ul.clients li, ul.clients2 li{
-	display: inline;
-	padding: 0 20px 0 0;
-}
-
-ul.clients li:nth-child(4),ul.clients2 li:nth-child(4) {
-    padding: 0;   
-}
-ul.clients2 li:nth-child(1) {
-    padding: 0 30px 0 0;   
-}
-
 .hero{
 	max-width: 768px;
 }
@@ -1073,6 +1057,23 @@ button.next:hover{
 button.prev:hover{
 	left: -210px;
 }
+
+ul.clients{
+	margin: 0 auto;
+}
+
+ul.clients2{
+	width: 80%;
+}
+
+ul.clients2 li img{
+	max-width: 60%;
+}
+
+ul.clients li, ul.clients2 li{
+	width: 49%;
+}
+
 
 }
 
