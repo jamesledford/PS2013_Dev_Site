@@ -525,6 +525,18 @@ h6.miles{
 	font-size:12px;
 }
 
+#navUp{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 120px;
+	right: -20px;
+	cursor: pointer;
+}
+
+#navUp:hover{
+	opacity: .7;
+}
 
 /* End Footer */
 
@@ -886,23 +898,29 @@ width: 100%;
 		font-size: 24px;
 	}
 
-.work-list p{
-	width: 70%;
-	font-size: 14px;
-	margin: auto;
-}	
+	.work-list p{
+		width: 70%;
+		font-size: 14px;
+		margin: auto;
+	}	
+	
+	.blockquote {
+		margin-top: 20px;
+		padding:5% 0 13% 10%;
+		width:80%;
+		border-top:solid 5px #d2d9db;
+		border-bottom:solid 5px #d2d9db;
+		color:#cb4830;
+		font-weight: 500;
+		font-size:20px;
+		font-family: museo-slab;
+	}
 
-.blockquote {
-	margin-top: 20px;
-	padding:5% 0 13% 10%;
-	width:80%;
-	border-top:solid 5px #d2d9db;
-	border-bottom:solid 5px #d2d9db;
-	color:#cb4830;
-	font-weight: 500;
-	font-size:20px;
-	font-family: museo-slab;
-}
+/*
+	#navUp{
+		right: 0px;
+	}
+*/
 
 }
 
@@ -939,6 +957,12 @@ width: 100%;
 		width: 180px;
 		background-position: left center;
 	}
+	
+/*
+	#navUp{
+		right: -140px;
+	}
+*/
 
 }
 
