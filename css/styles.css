@@ -119,10 +119,11 @@ h2{
 .clear { clear:both; }
 .wrapper { margin:auto; padding: 0; width: 100%; }
 .navwrapper { 
-margin:auto;
-padding:10px 0;
-height: 20px;
-width: 100%;
+	margin:auto;
+	padding:10px 0;
+	height: 20px;
+	width: 100%;
+	max-width: 1478px;
  }
 
 .logo{
@@ -218,7 +219,7 @@ header nav ul li ul { display: none; }
 section { background-color:#fff; }
 
 nav a {
-	padding: 1em;
+	padding: 10px 13px 8px;
 	color: #fff;
 	text-decoration:none;
 }
@@ -233,6 +234,11 @@ a, a:hover {
 	-moz-transition: background-color 0.25s ease-in;
 	-o-transition: background-color 0.25s ease-in;
 	transition: background-color 0.25s ease-in;
+}
+
+.logo a:hover, .logo a{
+	background: #cb4830;
+	padding: 10px 13px 0px;
 }
 
 section, header {
