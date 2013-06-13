@@ -43,6 +43,7 @@ $(function(){
 	
 	    if (!Modernizr.svg) {
 		  $(".menu").css("background-image", "url(../images/menu.png)");
+		  $(".awareness").css("background-image", "url(../images/awareness_dial.jpg)");
 		}
 	
 	

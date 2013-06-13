@@ -144,8 +144,6 @@ h2{
 	font-size: 24px;
 }
 
-
-
 .whoisplanet h3{
 	color: #4d595f;
 	font-weight: 100;
@@ -702,6 +700,10 @@ button.next{
 	right: -210px;
 }
 
+button.next p{
+	text-align: left;
+}
+
 button.next:hover{
 	right: -10px;
 }
@@ -716,7 +718,11 @@ button.prev:hover{
 	left: -25px;
 }
 
-
+.awareness{
+	background: url(../images/awareness_dial.svg) no-repeat;
+	background-size: contain;
+	margin: 50px 0 0;
+}
 
 .ecolabcs, .cokecs, .leonisacs, .depotcs {
 	margin: auto;
@@ -729,6 +735,9 @@ button.prev:hover{
 	width: 100%;
 }
 
+.copyfull img{
+	padding: 40px 0;
+}
 
 .copyleft{
 	float: left;
