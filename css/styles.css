@@ -646,12 +646,14 @@ button.next, button.prev{
 	-o-transition: all 1s;
 	transition: all 1s;
 	opacity: 0.6;
+	overflow: hidden;
 }
 
 .arrow{
 	display: block;
-	width: 10px;
-	height: 100%;
+	width: 15px;
+	height: 45px;
+	vertical-align: middle;
 	background-color: #000;
 	font-weight: 100;
 	font-size: 1.3em;
@@ -665,6 +667,7 @@ button.next .arrow, button.next p{
 
 button.next .arrow{
 	padding: 0 20px 0 10px;
+	margin-left: -2px;
 }
 button.next .arrow img{
 	margin: 0 0 0 7px;
@@ -683,6 +686,7 @@ button.prev p{
 
 button.prev .arrow{
 	padding: 0 20px 0 10px;
+	margin-right: -3px;
 }
 
 button p{
