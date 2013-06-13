@@ -172,14 +172,10 @@
 		                       		e.preventDefault();
 		                       	   if (jQuery(this).hasClass("mean-clicked")) {
 		                       	   		jQuery(this).text(meanExpand);
-		                       	   		console.log("Been clicked");
-		                               jQuery(this).prev('ul').slideUp(300, function(){
-		                                  
-		                               });
+		                               jQuery(this).prev('ul').slideUp(300);
 		                           } else {
 		                           		jQuery(this).text(meanContract);
-		                           		jQuery(this).prev('ul').slideDown(300, function(){
-		                           		});
+		                           		jQuery(this).prev('ul').slideDown(300);
 		                           }   
 		                           jQuery(this).toggleClass("mean-clicked"); 
 		                       });     
@@ -200,10 +196,10 @@
 	                        $navreveal.css("text-align", "center");
 	                        $navreveal.css("text-indent", "0");
 	                        $navreveal.css("font-size", meanMenuCloseSize);
-	                        jQuery('.mean-nav ul:first').slideDown(); 
+	                        jQuery('.mean-nav ul:first').slideDown(300); 
 	                        menuOn = true;
 	                    } else {
-	                    	jQuery('.mean-nav ul:first').slideUp();
+	                    	jQuery('.mean-nav ul:first').slideUp(300);
 	                    	menuOn = false;
 	                    }    
                         $navreveal.toggleClass("meanclose");
