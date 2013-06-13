@@ -41,6 +41,10 @@ $(function(){
 
 } //End milesAway function
 	
+	    if (!Modernizr.svg) {
+		  $(".menu").css("background-image", "url(../images/menu.png)");
+		}
+	
 	
 	/* Paul's Very Special Menu */
 	
@@ -68,5 +72,6 @@ $(function(){
 		  $(".navwrapper").css("height","20px");
 	  };
 	});
+	
 	
 });
