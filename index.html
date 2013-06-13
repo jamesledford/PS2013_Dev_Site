@@ -13,13 +13,11 @@
 	<![endif]-->
 	
     <script src="http://code.jquery.com/jquery-1.7.1.js"></script> 
-    <script src="js/touch.js"></script>
-	<script src="js/jquery.meanmenu.js"></script> 
+    <script src="js/touch.js"></script> 
 	<script src="js/main.js"></script>
     <script src="js/carousel.js"></script>
     <script>
     jQuery(document).ready(function () {
-        jQuery('header nav').meanmenu();
         var $elem = $("body");
         $(".scroll").click(function(e){		
 		e.preventDefault();
@@ -44,7 +42,8 @@
         <div class="logo">
     		<a class="nohover" href="index.html"><img src="images/ps_logo.jpg" alt="Planet Studio" border="0"/></a>
     		</div>
-            <ul>
+    		<div class="menu"></div>
+            <ul class="menuItems">
                 <li class="first"><a href="ourwork.html">Our Work</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li class="last scroll"><a href="#contactus">Contact Us</a></li>

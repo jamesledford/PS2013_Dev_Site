@@ -124,6 +124,7 @@ h2{
 	height: 20px;
 	width: 100%;
 	max-width: 1478px;
+	overflow: visible;
  }
 
 .logo{
@@ -201,22 +202,36 @@ header {
 
 /*header img { float:left; }*/
 
-header nav ul {
+.menuItems {
 	float:right;
 	margin: 0;
 	list-style-type: none;
+	width: 60%;
+	margin-right: 2%;
 }
 
-header nav ul li {
+.menuItems li{
 	display: inline;
-	margin-right: 1em;
+	width: 120px;
+	float: right;
 }
 
-header nav ul li:first-child { margin-left: 0; }
-
-header nav ul li ul { display: none; }
+.menuItems li a{
+	width: 100%;
+}
 
 section { background-color:#fff; }
+
+.menu{
+	width: 30px;
+	height: 30px;
+	background: url('../images/menu.svg') no-repeat;
+	background-size: contain;
+	float: right;
+	margin: -6px 15px 0 0;
+	cursor: pointer;
+	display: none;
+}
 
 nav a {
 	padding: 10px 13px 8px;
@@ -779,113 +794,6 @@ font: 300 12px/14px museo-slab;
 }
 
 
-/* ####### Mean Menu ####### */
-
-a.meanmenu-reveal {
-display: none;
-}
-
-.mean-container .mean-bar {
-position: relative;
-z-index: 999999; 
-float: left;
-width: 100%;
-background: #cb4830;
-}
-.mean-container a.meanmenu-reveal {
-position: absolute;
-margin: 7px 0 0 0;
-top: 0;
-right: 0;
-display: block;
-padding: 13px 13px 11px 13px;
-width: 22px;
-height: 22px;
-color: #fff;
-text-decoration: none;
-text-indent: -9999em;
-font-size: 16px;
-line-height: 22px;
-cursor: pointer;
-}
-.mean-container a.meanmenu-reveal span {
-display: block;
-margin-top: 3px;
-height: 3px;
-background: #fff;
-}
-.mean-container .mean-nav { 
-/* float: left; */
-padding:1em;
-/* width:100%; */
-background: #cb4830;
-}
-.mean-container .mean-nav ul {
-margin: 0;
-padding: 10px 0 0 0;
-width: 100%;
-list-style-type: none;
-}
-.mean-container .mean-nav ul li {
-position: relative;
-float: left;
-width: 95%;
-border-top:1px solid rgba(0,0,0,.1);
-border-bottom:1px solid rgba(255,255,255,.2);
-}
-.mean-container .mean-nav ul li a {
-display: block;
-float: left;
-margin: 0;
-padding: 1em 5%;
-width: 90%;
-color: #fff;
-text-align: left;
-text-align:center;
-text-decoration: none;
-text-transform: uppercase;
-}
-
-.mean-nav ul li.first { border-top:none; }
-.mean-nav ul li.last { border-bottom:none; }
-
-.mean-container .mean-nav ul li a:hover { 
-background: #252525;
-background: rgba(255,255,255,0.1); 
-}
-.mean-container .mean-nav ul li a.mean-expand {
-position: absolute;
-top: 0;
-right: 0;
-z-index: 2;
-padding: 12px !important;
-width: 26px;
-height: 26px;
-border: none !important;
-text-align: center;
-font-weight: 700;
-}
-.mean-container .mean-nav ul li a.mean-expand:hover {
-background: none;
-}
-.mean-container .mean-push { 
-float: left;
-clear: both;
-margin: 0;
-padding: 0;
-width: 100%; 
-}
-.mean-nav .wrapper {
-margin: 0;
-padding: 0;
-width: 100%;
-}
-
-.mean-container a.nohover{
-	background: transparent;
-	padding-left: 0;
-}
-
 
 /* media queries begin here */
 
@@ -967,19 +875,45 @@ width: 100%;
 		background-position: left center;
 	}
 	
-/*
-	#navUp{
-		right: -140px;
+	.navwrapper{
+		overflow: hidden;
+		-ms-transition: all 1s;
+		-moz-transition: all 1s;
+		-webkit-transition: all 1s; 
+		-o-transition: all 1s;
 	}
-*/
-
+	
+	.menu{
+		display: block;
+	}
+	
+	.menuItems, .menuItems li a, .menuItems li{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.menuItems li:nth-child(2){
+		border-bottom: thin solid #c04032;
+		border-top: thin solid #c04032;
+	}
+	
+	.menuItems{
+		display: none;
+		margin-right: 0;
+	}
+	
+	nav a {
+	padding: 10px -10px 8px 0;
+	}
+	
 }
 
 @media screen and (max-width: 768px) {
 
 .logo{
 padding: 0;
-margin: 6px 0;
+margin: 1px 0;
 }
 
 .whoisplanet{

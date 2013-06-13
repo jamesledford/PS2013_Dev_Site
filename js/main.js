@@ -42,5 +42,31 @@ $(function(){
 } //End milesAway function
 	
 	
+	/* Paul's Very Special Menu */
+	
+	$(".menu").click(function(){
+		if($(this).hasClass("open")){
+			closeMenu();
+		}
+		else{
+			openMenu();
+		}
+	});
+	
+	function openMenu(){
+			$(".menu").addClass("open");
+			$(".menuItems").css("display","block");
+			$(".navwrapper").css("height","146px");
+			};
+	function closeMenu(){
+			$(".menu").removeClass("open");
+			$(".navwrapper").css("height","20px");
+			};	
+			
+	$(window).resize(function() {
+	  if( $(window).width() > 700){
+		  $(".navwrapper").css("height","20px");
+	  };
+	});
 	
 });
